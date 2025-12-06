@@ -1,16 +1,32 @@
-# wastefood
+# WasteFood - Marketplace Makanan Sisa (Capstone Project) 🍎♻️
 
-A new Flutter project.
+**WasteFood** adalah aplikasi mobile berbasis Flutter yang menghubungkan penjual makanan (mitra) yang memiliki surplus stok harian dengan pembeli yang membutuhkan makanan terjangkau. Proyek ini bertujuan untuk mengurangi limbah pangan (*food waste*) melalui mekanisme pasar ekonomi sirkular.
 
-## Getting Started
+## 📱 Fitur Utama
+* **Location-Based Service (LBS):** Pencarian toko terdekat menggunakan peta interaktif.
+* **Transaksi Aman:** Metode pembayaran COD dengan *Countdown Timer* dan Validasi QR Code.
+* **Real-time Chat:** Komunikasi langsung antara Penjual dan Pembeli.
+* **Manajemen Stok:** Update stok otomatis dan validasi keranjang belanja.
+* **Dashboard Mitra:** Laporan keuangan dan statistik kinerja toko.
 
-This project is a starting point for a Flutter application.
+## 🛠️ Teknologi yang Digunakan
+* **Framework:** Flutter (Dart 3.x)
+* **Backend:** Firebase (Authentication, Firestore, Cloud Messaging)
+* **Media Storage:** Cloudinary
+* **Maps API:** Flutter Map / OpenStreetMap
+* **IDE:** Visual Studio Code
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Cara Menjalankan (Installation Guide)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Ikuti langkah berikut untuk menjalankan aplikasi di lingkungan lokal:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. Prasyarat
+Pastikan Anda telah menginstal:
+* Flutter SDK (Stable Channel)
+* Git
+* Android Studio / VS Code
+
+### 2. Clone Repositori
+```bash
+git clone [https://github.com/jafadean16/wastefood-mobile-apps.git](https://github.com/jafadean16/wastefood-mobile-apps.git)
+cd wastefood-mobile-apps
