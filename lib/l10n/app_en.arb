@@ -1,0 +1,16 @@
+{
+  "@@locale": "en",
+  "settings": "Settings",
+  "notifications": "Notifications",
+  "language": "Language",
+  "darkMode": "Dark Mode",
+  "buyerNotifications": "Buyer Notifications",
+  "sellerNotifications": "Seller Notifications",
+  "appNotifications": "App Notifications",
+  "emailNotifications": "Email Notifications",
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "loginFailed": "Login Failed",
+  "noAccountRegister": "Don't have an account? Register"
+}

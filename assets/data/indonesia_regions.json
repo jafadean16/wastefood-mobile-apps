@@ -1,0 +1,712 @@
+{
+  "Aceh": {
+    "Kota Banda Aceh": {
+      "Baiturrahman": ["23111 - 23127"],
+      "Banda Raya": ["23238 - 23246"],
+      "Jaya Baru": ["23231 - 23235"],
+      "Kuta Alam": ["23121 - 23129"],
+      "Ulee Kareng": ["23119 - 23127"]
+    },
+    "Kab. Aceh Besar": {
+      "Kota Jantho": ["23951"],
+      "Lhoknga": ["23371 - 23377"],
+      "Ingin Jaya": ["23371 - 23377"]
+    },
+    "Kab. Aceh Utara": {
+      "Lhoksukon": ["24372 - 24376"]
+    }
+  
+  },
+  "Sumatera Utara": {
+    "Kota Medan": {
+      "Medan Kota": ["20211 - 20219"],
+      "Medan Denai": ["20227 - 20228"],
+      "Medan Polonia": ["20153 - 20157"],
+      "Medan Tembung": ["20222 - 20224"]
+    },
+    "Kota Pematangsiantar": {
+      "Siantar Barat": ["21111 - 21118"],
+      "Siantar Utara": ["21141 - 21148"]
+    },
+    "Kab. Deli Serdang": {
+      "Lubuk Pakam": ["20511 - 20518"],
+      "Sunggal": ["20351 - 20353"]
+    },
+    "Kab. Samosir": {
+      "Pangururan": ["22392"]
+    }
+    
+  },
+  "Sumatera Barat": {
+    "Kota Padang": {
+      "Kuranji": ["25151 - 25158"],
+      "Lubuk Begalung": ["25221 - 25227"],
+      "Padang Utara": ["25171 - 25176"]
+    },
+    "Kota Bukittinggi": {
+      "Guguk Panjang": ["26131 - 26139"],
+      "Mandiangin Koto Selayan": ["26121 - 26127"]
+    },
+    "Kab. Agam": {
+      "Lubuk Basung": ["26451 - 26456"],
+      "Tanjung Raya": ["26471 - 26476"]
+    },
+    "Kab. Lima Puluh Kota": {
+      "Harau": ["26271 - 26274"]
+    }
+    
+  },
+  "Riau": {
+    "Kota Pekanbaru": {
+      "Senapelan": ["28154 - 28156"],
+      "Tampan": ["28292 - 28293"],
+      "Marpoyan Damai": ["28123 - 28282"]
+    },
+    "Kota Dumai": {
+      "Dumai Kota": ["28811 - 28814"],
+      "Dumai Barat": ["28821 - 28827"]
+    },
+    "Kab. Bengkalis": {
+      "Bengkalis": ["28711 - 28717"],
+      "Mandau": ["28884 - 28886"]
+    },
+    "Kab. Rokan Hilir": {
+      "Bagan Sinembah": ["28992"]
+    }
+    
+  },
+  "Jambi": {
+    "Kota Jambi": {
+      "Telanaipura": ["36121 - 36124"],
+      "Jelutung": ["36131 - 36137"],
+      "Kota Baru": ["36128 - 36129"]
+    },
+    "Kota Sungai Penuh": {
+      "Sungai Penuh": ["37111 - 37113"],
+      "Hamparan Rawang": ["37152 - 37152"]
+    },
+    "Kab. Muaro Jambi": {
+      "Sekernan": ["36381 - 36382"],
+      "Jambi Luar Kota": ["36361 - 36364"]
+    },
+    "Kab. Merangin": {
+      "Bangko": ["37371 - 37373"]
+    }
+    
+  },
+
+  "Sumatera Selatan": {
+    "Kota Palembang": {
+      "Ilir Timur I": ["30111 - 30114"],
+      "Seberang Ulu II": ["30251 - 30256"],
+      "Alang-Alang Lebar": ["30141 - 30149"]
+    },
+    "Kota Pagar Alam": {
+      "Pagar Alam Utara": ["31511 - 31526"]
+    },
+    "Kab. Banyuasin": {
+      "Pangkalan Balai": ["30751 - 30756"],
+      "Talang Kelapa": ["30761 - 30769"]
+    },
+    "Kab. Ogan Komering Ilir": {
+      "Kayu Agung": ["30611 - 30617"]
+    }
+   
+  },
+  "Bengkulu": {
+    "Kota Bengkulu": {
+      "Gading Cempaka": ["38211 - 38218"],
+      "Muara Bangkahulu": ["38371 - 38371"],
+      "Sungai Serut": ["38119 - 38119"]
+    },
+    "Kab. Bengkulu Utara": {
+      "Kota Arga Makmur": ["38611 - 38618"],
+      "Batik Nau": ["38651"]
+    },
+    "Kab. Rejang Lebong": {
+      "Curup": ["39111 - 39125"],
+      "Selupu Rejang": ["39171 - 39176"]
+    }
+   
+  },
+  "Lampung": {
+    "Kota Bandar Lampung": {
+      "Kedaton": ["35141 - 35149"],
+      "Tanjung Karang Pusat": ["35111 - 35119"],
+      "Rajabasa": ["35141 - 35149"]
+    },
+    "Kota Metro": {
+      "Metro Pusat": ["35371 - 35378"],
+      "Metro Utara": ["35371 - 35378"]
+    },
+    "Kab. Lampung Selatan": {
+      "Kalianda": ["35511 - 35553"],
+      "Natar": ["35361 - 35365"]
+    },
+    "Kab. Lampung Tengah": {
+      "Gunung Sugih": ["34151 - 34154"]
+    }
+  
+  },
+  "Kepulauan Bangka Belitung": {
+    "Kota Pangkalpinang": {
+      "Rangkui": ["33111 - 33119"],
+      "Bukit Intan": ["33141 - 33149"]
+    },
+    "Kab. Bangka": {
+      "Sungailiat": ["33211 - 33217"],
+      "Belinyu": ["33251 - 33256"]
+    },
+    "Kab. Belitung": {
+      "Tanjung Pandan": ["33411 - 33419"],
+      "Membalong": ["33452 - 33454"]
+    }
+    
+  },
+  "Kepulauan Riau": {
+    "Kota Batam": {
+      "Sekupang": ["29421 - 29428"],
+      "Batu Ampar": ["29451 - 29458"],
+      "Nongsa": ["29461 - 29466"]
+    },
+    "Kota Tanjungpinang": {
+      "Tanjungpinang Barat": ["29111 - 29115"],
+      "Bukit Bestari": ["29121 - 29125"]
+    },
+    "Kab. Bintan": {
+      "Bintan Utara": ["29151 - 29153"],
+      "Bintan Timur": ["29152 - 29155"]
+    },
+    "Kab. Natuna": {
+      "Bunguran Timur": ["29771"]
+    }
+    
+  },
+
+  "DKI Jakarta": {
+    "Kota Adm. Jakarta Pusat": {
+      "Gambir": ["10110 - 10160"],
+      "Menteng": ["10310 - 10350"]
+    },
+    "Kota Adm. Jakarta Barat": {
+      "Cengkareng": ["11710 - 11750"],
+      "Kebon Jeruk": ["11510 - 11560"]
+    }
+    
+  },
+  "Jawa Barat": {
+    "Kota Bandung": {
+      "Bandung Wetan": ["40111 - 40115"],
+      "Bojongloa Kaler": ["40233 - 40235"],
+      "Sukajadi": ["40161 - 40164"]
+    },
+    "Kota Bekasi": {
+      "Bekasi Selatan": ["17141 - 17148"],
+      "Pondok Gede": ["17411 - 17414"]
+    },
+    "Kab. Bogor": {
+      "Cibinong": ["16911 - 16915"],
+      "Ciawi": ["16720"]
+    },
+    "Kab. Garut": {
+      "Garut Kota": ["44111 - 44119"]
+    }
+    
+  },
+  "Jawa Tengah": {
+    "Kota Semarang": {
+      "Semarang Tengah": ["50131 - 50139"],
+      "Pedurungan": ["50192 - 50199"],
+      "Banyumanik": ["50261 - 50268"]
+    },
+    "Kota Surakarta (Solo)": {
+      "Jebres": ["57121 - 57129"],
+      "Laweyan": ["57141 - 57149"]
+    },
+    "Kab. Cilacap": {
+      "Cilacap Selatan": ["53211 - 53216"],
+      "Sidareja": ["53261 - 53265"]
+    },
+    "Kab. Brebes": {
+      "Brebes": ["52211 - 52219"]
+    }
+   
+  },
+  "DI Yogyakarta": {
+    "Kota Yogyakarta": {
+      "Gondokusuman": ["55221 - 55225"],
+      "Umbulharjo": ["55161 - 55167"]
+    },
+    "Kab. Sleman": {
+      "Depok": ["55281 - 55283"],
+      "Godean": ["55564"]
+    },
+    "Kab. Bantul": {
+      "Bantul": ["55711 - 55716"],
+      "Kasihan": ["55181 - 55188"]
+    },
+    "Kab. Kulon Progo": {
+      "Wates": ["55651 - 55655"]
+    }
+    
+  },
+  "Jawa Timur": {
+    "Kota Surabaya": {
+      "Asemrowo": ["60181"],
+      "Benowo": ["60197 - 60198"],
+      "Bubutan": ["60171 - 60174"],
+      "Bulak": ["60124 - 60126"],
+      "Dukuh Pakis": ["60225"],
+      "Gayungan": ["60231 - 60233"],
+      "Genteng": ["60271 - 60275"],
+      "Gubeng": ["60281 - 60286"],
+      "Gunung Anyar": ["60291 - 60293"],
+      "Jambangan": ["60232 - 60235"],
+      "Karang Pilang": ["60221 - 60224"],
+      "Kenjeran": ["60121 - 60127"],
+      "Krembangan": ["60171 - 60185"],
+      "Lakarsantri": ["60211 - 60214"],
+      "Mulyorejo": ["60111 - 60119"],
+      "Pabean Cantikan": ["60161 - 60163"],
+      "Pakal": ["60192 - 60196"],
+      "Rungkut": ["60291 - 60298"],
+      "Sambikerep": ["60217"],
+      "Sawahan": ["60251 - 60256"],
+      "Semampir": ["60151 - 60156"],
+      "Simokerto": ["60141 - 60145"],
+      "Sukolilo": ["60117 - 60119"],
+      "Sukomanunggal": ["60188 - 60278"],
+      "Tambaksari": ["60131 - 60139"],
+      "Tandes": ["60186 - 60188"],
+      "Tegalsari": ["60261 - 60265"],
+      "Tenggilis Mejoyo": ["60291 - 60293"],
+      "Wiyung": ["60228 - 60229"],
+      "Wonocolo": ["60235 - 60237"],
+      "Wonokromo": ["60241 - 60244"]
+    },
+    "Kab. Sidoarjo": {
+      "Balongbendo": ["61262 - 61264"],
+      "Buduran": ["61252 - 61254"],
+      "Candi": ["61271 - 61274"],
+      "Gedangan": ["61254 - 61258"],
+      "Jabon": ["61272 - 61274"],
+      "Krembung": ["61275"],
+      "Krian": ["61261 - 61262"],
+      "Porong": ["61274"],
+      "Prambon": ["61264 - 61265"],
+      "Sedati": ["61253 - 61254"],
+      "Sidoarjo": ["61211 - 61218"],
+      "Sukodono": ["61258"],
+      "Taman": ["61257"],
+      "Tanggulangin": ["61272"],
+      "Tulangan": ["61273 - 61274"],
+      "Waru": ["61256 - 61258"],
+      "Wonoayu": ["61273 - 61274"]
+    },
+    "Kab. Gresik": {
+      "Balongpanggang": ["61173"],
+      "Benjeng": ["61172"],
+      "Bungah": ["61152"],
+      "Cerme": ["61171"],
+      "Driyorejo": ["61177"],
+      "Duduk Sampeyan": ["61163"],
+      "Dukun": ["61162"],
+      "Gresik": ["61111 - 61124"],
+      "Kebomas": ["61121 - 61124"],
+      "Kedamean": ["61175"],
+      "Manyar": ["61151"],
+      "Menganti": ["61174"],
+      "Panceng": ["61156"],
+      "Sidayu": ["61153"],
+      "Tambak": ["61182"],
+      "Ujungpangkah": ["61154"],
+      "Wringinanom": ["61176"],
+      "Sangkapura": ["61181"]
+    },
+    "Kota Malang": {
+      "Klojen": ["65111 - 65119"],
+      "Blimbing": ["65121 - 65129"],
+      "Kedungkandang": ["65133 - 65139"],
+      "Sukun": ["65141 - 65148"],
+      "Lowokwaru": ["65141 - 65147"]
+    },
+    "Kab. Banyuwangi": {
+      "Banyuwangi": ["68411 - 68419"],
+      "Genteng": ["68465 - 68469"],
+      "Wongsorejo": ["68453"],
+      "Rogojampi": ["68462"]
+    }
+    
+  },
+
+  "Banten": {
+    "Kota Tangerang": {
+      "Ciledug": ["15151 - 15159"],
+      "Tangerang": ["15111 - 15119"],
+      "Cipondoh": ["15141 - 15148"]
+    },
+    "Kota Serang": {
+      "Serang": ["42111 - 42119"],
+      "Walantaka": ["42183 - 42183"]
+    },
+    "Kab. Tangerang": {
+      "Curug": ["15810 - 15810"],
+      "Tigaraksa": ["15720 - 15720"]
+    }
+    
+  },
+  "Bali": {
+    "Kota Denpasar": {
+      "Denpasar Utara": ["80231 - 80239"],
+      "Denpasar Selatan": ["80221 - 80229"]
+    },
+    "Kab. Badung": {
+      "Kuta": ["80361 - 80361"],
+      "Mengwi": ["80351 - 80352"]
+    },
+    "Kab. Gianyar": {
+      "Gianyar": ["80511 - 80519"],
+      "Ubud": ["80571 - 80572"]
+    },
+    "Kab. Buleleng": {
+      "Buleleng": ["81111 - 81119"]
+    }
+   
+  },
+  "Nusa Tenggara Barat (NTB)": {
+    "Kota Mataram": {
+      "Mataram": ["83111 - 83119"],
+      "Selaparang": ["83121 - 83129"]
+    },
+    "Kota Bima": {
+      "Raba": ["84111 - 84119"]
+    },
+    "Kab. Lombok Barat": {
+      "Gerung": ["83361 - 83363"],
+      "Sekotong": ["83365 - 83366"]
+    },
+    "Kab. Sumbawa": {
+      "Sumbawa": ["84311 - 84318"]
+    }
+    
+  },
+  "Nusa Tenggara Timur (NTT)": {
+    "Kota Kupang": {
+      "Alak": ["85231 - 85238"],
+      "Kelapa Lima": ["85221 - 85228"]
+    },
+    "Kab. Kupang": {
+      "Kupang Tengah": ["85361 - 85364"]
+    },
+    "Kab. Sikka": {
+      "Maumere": ["86111 - 86119"]
+    },
+    "Kab. Timor Tengah Selatan": {
+      "Soe": ["85511 - 85519"]
+    }
+    
+  },
+  "Kalimantan Barat": {
+    "Kota Pontianak": {
+      "Pontianak Kota": ["78111 - 78119"],
+      "Pontianak Tenggara": ["78124 - 78124"]
+    },
+    "Kota Singkawang": {
+      "Singkawang Barat": ["79111 - 79119"]
+    },
+    "Kab. Kubu Raya": {
+      "Sungai Raya": ["78391 - 78391"]
+    },
+    "Kab. Sintang": {
+      "Sintang": ["78611 - 78619"]
+    }
+    
+  },
+  "Kalimantan Tengah": {
+    "Kota Palangka Raya": {
+      "Jekan Raya": ["73111 - 73119"],
+      "Pahandut": ["73111 - 73119"]
+    },
+    "Kab. Kotawaringin Timur": {
+      "Sampit": ["74311 - 74319"],
+      "Mentaya Hilir Selatan": ["74352 - 74352"]
+    },
+    "Kab. Barito Selatan": {
+      "Buntok": ["73711 - 73713"]
+    }
+    
+  },
+
+  "Kalimantan Selatan": {
+    "Kota Banjarmasin": {
+      "Banjarmasin Tengah": ["70111 - 70119"],
+      "Banjarmasin Utara": ["70121 - 70129"]
+    },
+    "Kota Banjarbaru": {
+      "Banjarbaru Utara": ["70711 - 70714"]
+    },
+    "Kab. Banjar": {
+      "Martapura": ["70611 - 70619"],
+      "Gambut": ["70652 - 70652"]
+    },
+    "Kab. Tanah Laut": {
+      "Pelaihari": ["70811 - 70819"]
+    }
+    
+  },
+  "Kalimantan Timur": {
+    "Kota Samarinda": {
+      "Samarinda Ulu": ["75111 - 75119"],
+      "Palaran": ["75241 - 75243"]
+    },
+    "Kota Balikpapan": {
+      "Balikpapan Kota": ["76111 - 76115"],
+      "Balikpapan Utara": ["76121 - 76126"]
+    },
+    "Kab. Kutai Kartanegara": {
+      "Tenggarong": ["75511 - 75518"],
+      "Samboja": ["75271 - 75271"]
+    }
+    
+  },
+  "Kalimantan Utara": {
+    "Kota Tarakan": {
+      "Tarakan Barat": ["77111 - 77118"],
+      "Tarakan Timur": ["77121 - 77128"]
+    },
+    "Kab. Bulungan": {
+      "Tanjung Selor": ["77211 - 77215"]
+    },
+    "Kab. Nunukan": {
+      "Nunukan": ["77482 - 77484"],
+      "Sebatik": ["77481 - 77481"]
+    }
+   
+  },
+  "Sulawesi Utara": {
+    "Kota Manado": {
+      "Malalayang": ["95161 - 95167"],
+      "Wenang": ["95111 - 95117"]
+    },
+    "Kota Bitung": {
+      "Maesa": ["95511 - 95518"],
+      "Girian": ["95531 - 95537"]
+    },
+    "Kab. Minahasa": {
+      "Tondano Barat": ["95611 - 95618"],
+      "Kawangkoan": ["95691 - 95691"]
+    }
+    
+  },
+  "Sulawesi Tengah": {
+    "Kota Palu": {
+      "Palu Selatan": ["94231 - 94239"],
+      "Palu Barat": ["94221 - 94227"]
+    },
+    "Kab. Sigi": {
+      "Sigi Biromaru": ["94364 - 94366"]
+    },
+    "Kab. Poso": {
+      "Poso Kota": ["94611 - 94618"]
+    },
+    "Kab. Banggai": {
+      "Luwuk": ["94711 - 94717"]
+    }
+    
+  },
+
+  "Sulawesi Selatan": {
+    "Kota Makassar": {
+      "Panakkukang": ["90231 - 90234"],
+      "Biringkanaya": ["90241 - 90245"]
+    },
+    "Kota Parepare": {
+      "Bacukiki": ["91121 - 91122"]
+    },
+    "Kab. Gowa": {
+      "Somba Opu": ["92111 - 92119"],
+      "Pallangga": ["92161 - 92161"]
+    },
+    "Kab. Bone": {
+      "Watampone": ["92711 - 92718"]
+    }
+   
+  },
+  "Sulawesi Tenggara": {
+    "Kota Kendari": {
+      "Mandonga": ["93111 - 93116"],
+      "Kadia": ["93117 - 93118"]
+    },
+    "Kota Bau-Bau": {
+      "Wolio": ["93711 - 93715"]
+    },
+    "Kab. Konawe": {
+      "Unaaha": ["93411 - 93418"],
+      "Wawotobi": ["93461 - 93461"]
+    },
+    "Kab. Muna": {
+      "Raha": ["93611 - 93618"]
+    }
+   
+  },
+  "Gorontalo": {
+    "Kota Gorontalo": {
+      "Kota Tengah": ["96131 - 96136"],
+      "Sipatana": ["96137 - 96137"]
+    },
+    "Kab. Gorontalo": {
+      "Limboto": ["96211 - 96219"],
+      "Telaga": ["96181 - 96181"]
+    },
+    "Kab. Boalemo": {
+      "Tilamuta": ["96263 - 96263"]
+    }
+    
+  },
+  "Sulawesi Barat": {
+    "Kab. Mamuju": {
+      "Mamuju": ["91511 - 91518"],
+      "Kalukku": ["91561 - 91561"]
+    },
+    "Kab. Polewali Mandar": {
+      "Polewali": ["91311 - 91318"]
+    },
+    "Kab. Majene": {
+      "Banggae": ["91411 - 91418"]
+    }
+   
+  },
+
+  "Maluku": {
+    "Kota Ambon": {
+      "Sirimau": ["97121 - 97129"],
+      "Baguala": ["97231 - 97233"]
+    },
+    "Kab. Maluku Tengah": {
+      "Masohi": ["97511 - 97519"],
+      "Salahutu": ["97582 - 97583"]
+    },
+    "Kab. Maluku Tenggara": {
+      "Kei Kecil": ["97621 - 97624"]
+    }
+ 
+  },
+  "Maluku Utara": {
+    "Kota Ternate": {
+      "Ternate Utara": ["97721 - 97728"],
+      "Ternate Selatan": ["97711 - 97717"]
+    },
+    "Kota Tidore Kepulauan": {
+      "Tidore": ["97811 - 97816"]
+    },
+    "Kab. Halmahera Utara": {
+      "Tobelo": ["97761 - 97768"],
+      "Galela": ["97751 - 97751"]
+    }
+    
+  },
+  "Papua": {
+    "Kota Jayapura": {
+      "Jayapura Utara": ["99111 - 99119"],
+      "Abepura": ["99221 - 99227"]
+    },
+    "Kab. Jayapura": {
+      "Sentani": ["99351 - 99352"],
+      "Waibu": ["99354"]
+    },
+    "Kab. Merauke": {
+      "Merauke": ["99611 - 99619"]
+    }
+   
+  },
+  "Papua Barat": {
+    "Kota Sorong": {
+      "Sorong": ["98411 - 98418"],
+      "Sorong Manoi": ["98416 - 98418"]
+    },
+    "Kab. Manokwari": {
+      "Manokwari Barat": ["98311 - 98316"],
+      "Oransbari": ["98318"]
+    },
+    "Kab. Fakfak": {
+      "Fakfak": ["98611 - 98618"]
+    }
+   
+  },
+  "Papua Selatan": {
+    "Kab. Merauke": {
+      "Merauke": ["99611 - 99619"],
+      "Tanah Miring": ["99653"]
+    },
+    "Kab. Mappi": {
+      "Kepi": ["99872"]
+    },
+    "Kab. Asmat": {
+      "Agats": ["99862"]
+    }
+    
+  },
+  "Papua Tengah": {
+    "Kab. Nabire": {
+      "Nabire": ["98811 - 98817"],
+      "Wanggar": ["98818"]
+    },
+    "Kab. Mimika": {
+      "Mimika Baru": ["99911 - 99918"]
+    },
+    "Kab. Paniai": {
+      "Enarotali": ["98711"]
+    }
+   
+  },
+
+  "Papua Pegunungan": {
+    "Kab. Jayawijaya": {
+      "Wamena": ["99511 - 99519"],
+      "Hubikosi": ["99500"]
+    },
+    "Kab. Pegunungan Bintang": {
+      "Oksibil": ["99573"]
+    },
+    "Kab. Yahukimo": {
+      "Dekai": ["99041"]
+    },
+    "Kab. Tolikara": {
+      "Karubaga": ["99564"]
+    },
+    "Kab. Lanny Jaya": {
+      "Tiom": ["99551"]
+    },
+    "Kab. Mamberamo Tengah": {
+      "Kobakma": ["99042"]
+    },
+    "Kab. Yalimo": {
+      "Elelim": ["99052"]
+    },
+    "Kab. Nduga": {
+      "Kenyam": ["99051"]
+    }
+  },
+  "Papua Barat Daya": {
+    "Kota Sorong": {
+      "Sorong": ["98411 - 98418"],
+      "Sorong Manoi": ["98416 - 98418"]
+    },
+    "Kab. Sorong": {
+      "Aimas": ["98457"],
+      "Klamono": ["98453"]
+    },
+    "Kab. Sorong Selatan": {
+      "Teminabuan": ["98458"]
+    },
+    "Kab. Raja Ampat": {
+      "Waisai": ["98482"]
+    },
+    "Kab. Tambrauw": {
+      "Fef": ["98485"]
+    },
+    "Kab. Maybrat": {
+      "Kumurkek": ["98481"]
+    }
+  }
+}

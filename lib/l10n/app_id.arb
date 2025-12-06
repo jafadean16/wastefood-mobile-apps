@@ -1,0 +1,17 @@
+{
+  "@@locale": "id",
+  "settings": "Pengaturan",
+  "notifications": "Notifikasi",
+  "language": "Bahasa",
+  "darkMode": "Mode Gelap",
+  "buyerNotifications": "Notifikasi Pembeli",
+  "sellerNotifications": "Notifikasi Penjual",
+  "appNotifications": "Notifikasi Aplikasi",
+  "emailNotifications": "Notifikasi Email",
+  "login": "Masuk",
+  "email": "Email",
+  "password": "Kata Sandi",
+  "loginFailed": "Gagal Masuk",
+  "noAccountRegister": "Belum punya akun? Daftar"
+}
+

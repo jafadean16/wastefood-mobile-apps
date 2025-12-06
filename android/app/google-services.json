@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "700741537981",
+    "project_id": "wastefood-dfcf5",
+    "storage_bucket": "wastefood-dfcf5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700741537981:android:b4fe5f6042634a0f6427d4",
+        "android_client_info": {
+          "package_name": "com.example.wastefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700741537981-vqvsvco4b45fesmkec6q6gb2ti0hsv1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXFSh41my5u5C6fFTaXgf83xR4pQ0ASyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700741537981-vqvsvco4b45fesmkec6q6gb2ti0hsv1n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "700741537981-cinu8ut2ibe0e0g2o39du7r09sh4eim9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.wastefood"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700741537981:android:27f1d1a366334cfb6427d4",
+        "android_client_info": {
+          "package_name": "com.example.wastefood_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700741537981-vqvsvco4b45fesmkec6q6gb2ti0hsv1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXFSh41my5u5C6fFTaXgf83xR4pQ0ASyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700741537981-vqvsvco4b45fesmkec6q6gb2ti0hsv1n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "700741537981-cinu8ut2ibe0e0g2o39du7r09sh4eim9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.wastefood"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700741537981:android:e25d5175ce5dbf436427d4",
+        "android_client_info": {
+          "package_name": "com.wastefood.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700741537981-vqvsvco4b45fesmkec6q6gb2ti0hsv1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXFSh41my5u5C6fFTaXgf83xR4pQ0ASyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700741537981-vqvsvco4b45fesmkec6q6gb2ti0hsv1n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "700741537981-cinu8ut2ibe0e0g2o39du7r09sh4eim9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.wastefood"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,66 @@
+name: wastefood
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  http: ^1.3.0
+  shared_preferences: ^2.2.2
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.4.0
+  cloud_firestore: ^5.4.3
+  firebase_auth: ^5.2.0
+  firebase_storage: ^12.3.3
+  lottie: ^3.1.0
+  logging: ^1.0.2
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.1
+  geolocator: ^11.0.0
+  image_picker: ^0.8.5+3
+  badges: ^3.1.1
+  qr_flutter: ^4.1.0
+  firebase_messaging: ^15.1.3
+  flutter_local_notifications: ^17.2.4
+  flutter_rating_bar: ^4.0.0
+  logger: ^2.0.2 # atau versi terbaru
+  mobile_scanner: ^7.0.1
+  rxdart: ^0.27.7
+  flutter_speed_dial: ^7.0.0
+  google_fonts: ^6.2.1
+  # Animations & effects
+  flutter_animate: ^4.5.0
+  glassmorphism: ^3.0.0
+  # Icon modern
+  lucide_icons: ^0.257.0
+  # Untuk button & card shadow aesthetic
+  flutter_neumorphic_plus: ^3.3.0
+  cloud_functions: ^5.6.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/leaf_loading.json
+    - assets/success_animation.json
+    - assets/data/indonesia_regions.json
+  generate: true  # Harus sejajar dengan 'assets' dan 'uses-material-design'
+
+flutter_gen:
+  synthetic-package: false
