@@ -26,6 +26,8 @@ class _CartPageState extends State<CartPage> {
   Map<String, bool> selectedGroupedItems = {};
   final Map<String, bool> _processing = {};
   StreamSubscription<QuerySnapshot>? _cartSub;
+  Map<String, List<Product>> recommendedByStore = {};
+  bool isLoadingRekom = false;
 
   @override
   void initState() {
@@ -115,6 +117,30 @@ class _CartPageState extends State<CartPage> {
         selectedGroupedItems = sel;
       });
       hitungTotalHarga();
+    }
+  }
+
+  Future<void> fetchRecommendations(String pid, String tokoId) async {
+    if (recommendedByStore[pid] != null) return;
+
+    try {
+      final snap =
+          await FirebaseFirestore.instance
+              .collection('produk')
+              .where('tokoId', isEqualTo: tokoId)
+              .get();
+
+      final List<Product> rekom =
+          snap.docs
+              .where((doc) => doc.id != pid)
+              .map((doc) => Product.fromDocument(doc)) // ← aman!
+              .toList();
+
+      setState(() {
+        recommendedByStore[pid] = rekom;
+      });
+    } catch (e) {
+      debugPrint("Gagal load rekomendasi: $e");
     }
   }
 
@@ -266,154 +292,275 @@ class _CartPageState extends State<CartPage> {
     final bool isSelected = selectedGroupedItems[pid] ?? false;
     final bool processing = _processing[pid] == true;
 
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 180),
-      curve: Curves.easeInOut,
-      margin: const EdgeInsets.symmetric(vertical: 6),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black12.withValues(alpha: 0.05),
-            blurRadius: 6,
-            offset: const Offset(0, 3),
-          ),
-        ],
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(10),
-        child: Row(
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(12),
-              child: Image.network(
-                product.gambarUrl,
-                width: 70,
-                height: 70,
-                fit: BoxFit.cover,
-                errorBuilder:
-                    (_, __, ___) => const Icon(Icons.broken_image, size: 60),
-              ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    product.namaProduk,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // ==================== REKOMENDASI PRODUK ====================
+        FutureBuilder(
+          future: fetchRecommendations(pid, product.tokoId),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting &&
+                (recommendedByStore[pid] == null)) {
+              return const Padding(
+                padding: EdgeInsets.all(8),
+                child: SizedBox(
+                  height: 30,
+                  child: Center(
+                    child: CircularProgressIndicator(strokeWidth: 2),
                   ),
-                  const SizedBox(height: 4),
-                  Text(
-                    currencyFormatter.format(product.harga),
-                    style: const TextStyle(
-                      color: Colors.green,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Row(
-                    children: [
-                      IconButton(
-                        icon: const Icon(Icons.remove_circle_outline),
-                        color: Colors.redAccent,
-                        onPressed:
-                            processing
-                                ? null
-                                : () => ubahJumlahItem(
-                                  FirebaseAuth.instance.currentUser!.uid,
-                                  pid,
-                                  -1,
-                                ),
-                      ),
-                      Text(
-                        '$quantity',
-                        style: const TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      IconButton(
-                        icon: const Icon(Icons.add_circle_outline),
-                        color: Colors.green,
-                        onPressed:
-                            processing
-                                ? null
-                                : () => ubahJumlahItem(
-                                  FirebaseAuth.instance.currentUser!.uid,
-                                  pid,
-                                  1,
-                                ),
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        'Stok: ${product.stok}',
-                        style: const TextStyle(
-                          fontSize: 12,
-                          color: Colors.grey,
-                        ),
-                      ),
-                      if (processing) ...[
-                        const SizedBox(width: 8),
-                        const SizedBox(
-                          width: 12,
-                          height: 12,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        ),
-                      ],
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            Column(
+                ),
+              );
+            }
+
+            final rekom = recommendedByStore[pid] ?? [];
+
+            if (rekom.isEmpty) return const SizedBox();
+
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Checkbox(
-                  value: isSelected,
-                  onChanged: (val) {
-                    selectedGroupedItems[pid] = val ?? false;
-                    hitungTotalHarga();
-                    setState(() {});
-                  },
+                const SizedBox(height: 10),
 
-                  // ❗ warna saat BELUM DIPENCET (kosong)
-                  side: const BorderSide(
-                    color: Color(0xFF4CAF50), // border hijau
-                    width: 2,
-                  ),
-
-                  // ❗ warna saat SUDAH dicentang
-                  checkColor: Colors.white, // warna icon ✔
-                  activeColor: const Color(
-                    0xFF4CAF50,
-                  ), // warna background hijau
-                  // ❗ hilangkan warna ungu saat ditekan
-                  fillColor: WidgetStateProperty.resolveWith((states) {
-                    if (states.contains(WidgetState.selected)) {
-                      return const Color(0xFF4CAF50); // selected → hijau
-                    }
-                    return Colors.white; // belum dicentang → putih
-                  }),
+                const Text(
+                  "Rekomendasi dari toko ini",
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                 ),
 
-                IconButton(
-                  icon: const Icon(Icons.delete_outline),
-                  color: Colors.redAccent,
-                  onPressed:
-                      () => hapusItemGroup(
-                        pid,
-                        FirebaseAuth.instance.currentUser!.uid,
+                const SizedBox(height: 8),
+
+                SizedBox(
+                  height: 125, // dinaikkan biar tidak overflow
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: rekom.length,
+                    itemBuilder: (context, index) {
+                      final r = rekom[index];
+
+                      return InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(
+                            context,
+                            '/product-detail',
+                            arguments: {
+                              'produkId': r.produkId,
+                              'nama': r.namaProduk,
+                              'deskripsi': r.deskripsi,
+                              'harga': r.harga,
+                              'stok': r.stok,
+                              'gambarUrl': r.gambarUrl,
+                              'kategori': r.kategori,
+                              'tokoId': r.tokoId,
+                              'tokoNama': r.tokoNama,
+                              'sellerId': r.sellerId,
+                            },
+                          );
+                        },
+                        child: Container(
+                          width: 120,
+                          margin: const EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(color: Colors.grey.shade200),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(8),
+                                child: Image.network(
+                                  r.gambarUrl,
+                                  width: 100,
+                                  height: 55,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              const SizedBox(height: 6),
+                              Text(
+                                r.namaProduk,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              const SizedBox(height: 2),
+                              Text(
+                                currencyFormatter.format(r.harga),
+                                style: const TextStyle(
+                                  color: Colors.green,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+
+                const SizedBox(height: 10),
+              ],
+            );
+          },
+        ),
+
+        // ==================== CARD PRODUK KERANJANG ====================
+        AnimatedContainer(
+          duration: const Duration(milliseconds: 180),
+          curve: Curves.easeInOut,
+          margin: const EdgeInsets.symmetric(vertical: 6),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black12.withValues(alpha: 0.05),
+                blurRadius: 6,
+                offset: const Offset(0, 3),
+              ),
+            ],
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(10),
+            child: Row(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.network(
+                    product.gambarUrl,
+                    width: 70,
+                    height: 70,
+                    fit: BoxFit.cover,
+                    errorBuilder:
+                        (_, __, ___) =>
+                            const Icon(Icons.broken_image, size: 60),
+                  ),
+                ),
+
+                const SizedBox(width: 12),
+
+                // ==================== INFO PRODUK ====================
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        product.namaProduk,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
+                      const SizedBox(height: 4),
+                      Text(
+                        currencyFormatter.format(product.harga),
+                        style: const TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+
+                      // ==================== JUMLAH ====================
+                      Row(
+                        children: [
+                          IconButton(
+                            icon: const Icon(Icons.remove_circle_outline),
+                            color: Colors.redAccent,
+                            onPressed:
+                                processing
+                                    ? null
+                                    : () => ubahJumlahItem(
+                                      FirebaseAuth.instance.currentUser!.uid,
+                                      pid,
+                                      -1,
+                                    ),
+                          ),
+                          Text(
+                            "$quantity",
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          IconButton(
+                            icon: const Icon(Icons.add_circle_outline),
+                            color: Colors.green,
+                            onPressed:
+                                processing
+                                    ? null
+                                    : () => ubahJumlahItem(
+                                      FirebaseAuth.instance.currentUser!.uid,
+                                      pid,
+                                      1,
+                                    ),
+                          ),
+
+                          const SizedBox(width: 8),
+                          Text(
+                            "Stok: ${product.stok}",
+                            style: const TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+
+                          if (processing) ...[
+                            const SizedBox(width: 8),
+                            const SizedBox(
+                              width: 12,
+                              height: 12,
+                              child: CircularProgressIndicator(strokeWidth: 2),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+
+                // ==================== CHECKBOX + DELETE ====================
+                Column(
+                  children: [
+                    Checkbox(
+                      value: isSelected,
+                      onChanged: (val) {
+                        selectedGroupedItems[pid] = val ?? false;
+                        hitungTotalHarga();
+                        setState(() {});
+                      },
+                      side: const BorderSide(
+                        color: Color(0xFF4CAF50),
+                        width: 2,
+                      ),
+                      checkColor: Colors.white,
+                      activeColor: const Color(0xFF4CAF50),
+                      fillColor: WidgetStateProperty.resolveWith((states) {
+                        if (states.contains(WidgetState.selected)) {
+                          return const Color(0xFF4CAF50);
+                        }
+                        return Colors.white;
+                      }),
+                    ),
+
+                    IconButton(
+                      icon: const Icon(Icons.delete_outline),
+                      color: Colors.redAccent,
+                      onPressed:
+                          () => hapusItemGroup(
+                            pid,
+                            FirebaseAuth.instance.currentUser!.uid,
+                          ),
+                    ),
+                  ],
                 ),
               ],
             ),
-          ],
+          ),
         ),
-      ),
+      ],
     );
   }
 
